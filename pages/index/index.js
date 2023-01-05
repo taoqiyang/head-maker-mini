@@ -45,15 +45,15 @@ Page({
   onLoad: function () {
     let that = this
     wx.setNavigationBarTitle({
-      title: '小依助手'
+      title: '头像助手plus'
     })
     wx.showShareMenu({
       withShareTicket: true,
       menus: ['shareAppMessage', 'shareTimeline']
     })
-    setTimeout(() => {
-      that.setData({ sendTipFlg: true })
-    }, 60 * 1000);
+    // setTimeout(() => {
+    //   that.setData({ sendTipFlg: true })
+    // }, 60 * 1000);
   },
 
   /**
@@ -538,7 +538,7 @@ Page({
    */
   onShareAppMessage: function () {
     return {
-      title: '小依助手头像制作',
+      title: '头像助手plus',
       desc: '国旗头像、卡通头像等',
       path: '/pages/index/index',
       imageUrl: getApp().globalData.userInfo.highAvatarUrl,

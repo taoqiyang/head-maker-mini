@@ -1,7 +1,7 @@
 <p align="center">
     <img alt="logo" src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/bd5b3ac496ee4904bec64e2c60569742~tplv-k3u1fbpfcp-watermark.image" width="120" height="120" style="margin-bottom: 10px;">
 </p>
-<h1 align="center">小依助手 微信换头像</h1>
+<h1 align="center">头像助手 微信换头像 头像编辑</h1>
 
 <p align="center">制作微信头像、抖音头像、中国红国旗、头像海报等</p>
 

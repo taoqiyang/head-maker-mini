@@ -71,14 +71,20 @@ page {
 .userinfo-makebutton {
   width: 250rpx;
   height: 100rpx;
+  margin-top: 40rpx;
+  position: relative;
+}
+.userinfo-makebutton-button {
+  height: 100rpx;
   line-height: 100rpx;
   text-align: center;
   background: var(--themeColor);
   color: #fff;
   border-radius: 15rpx;
   font-weight: 500;
-  margin-top: 40rpx;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .userinfo-imageview {
@@ -224,6 +230,7 @@ page {
   height: 80rpx;
   position: absolute;
   top: 30rpx;
+  right: -90rpx;
   transform: rotate(-30deg);
   animation: hand_click 1.5s infinite;
 }

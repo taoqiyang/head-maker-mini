@@ -114,22 +114,24 @@ Page({
   /**
    * 获取昵称授权
    */
-  getUserInfo: function (e) {
-    wx.showLoading({ title: '获取中...' })
-    wx.getUserProfile({
-      desc: "获取你的昵称、头像等信息",
-      success: res => {
-        wx.hideLoading()
-        this._saveUserInfo(res.userInfo)
-      },
-      fail: res => {
-        wx.showToast({
-          icon: 'none',
-          title: '请先授权头像信息！',
-        })
-        return;
-      }
-    })
+  getUserInfo: function (res) {
+    console.log(res)
+    // wx.showLoading({ title: '获取中...' })
+    // wx.getUserProfile({
+    //   desc: "获取你的昵称、头像等信息",
+    //   success: res => {
+    //     wx.hideLoading()
+    //     this._saveUserInfo(res.userInfo)
+    //   },
+    //   fail: res => {
+    //     wx.showToast({
+    //       icon: 'none',
+    //       title: '请先授权头像信息！',
+    //     })
+    //     return;
+    //   }
+    // })
+    this._saveUserInfo(res.detail)
   },
 
   /**

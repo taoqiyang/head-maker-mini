@@ -7,8 +7,9 @@
     <canvas class="userinfo-canvas" canvas-id="festivalCanvas"></canvas>
     <view wx:if="{{!hasUserInfo}}" class="userinfo-topview">
       <image src="../../images/icon/head.png"></image>
-      <view class="userinfo-makebutton" bindtap="getUserInfo" hover-class="hover-tap">
-        获取微信头像 <image class="hand-icon" src="../../images/icon/hand-icon.png"></image>
+      <view class="userinfo-makebutton" hover-class="hover-tap">
+        <button class="userinfo-makebutton-button" open-type="chooseAvatar" bindchooseavatar='getUserInfo' size="mini" style="display: flex;" >获取微信头像</button>
+         <image class="hand-icon" src="../../images/icon/hand-icon.png"></image>
       </view>
     </view>
     <block wx:else>
